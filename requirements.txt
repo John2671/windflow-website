@@ -6,4 +6,3 @@ requests
 seaborn
 streamlit_folium
 folium
-os
