@@ -3,6 +3,7 @@ import os
 import numpy as np
 import pandas as pd
 import datetime
+from  datetime import datetime as dtt
 import requests
 #from visions import Time
 import seaborn as sns
@@ -162,11 +163,18 @@ st.write('Fecha:', d)
 t = st.time_input('Hora', datetime.time(19, 00))
 st.write('Hora:', t)
 
+# s1 = '03:00:00'
+# format = '%H:%M:%S'
+# time =dtt.strptime(str(t), format) - dtt.strptime(s1, format)
+# t_string = datetime.
+(h,m,s)=str(t).split(':')
+
 
 URL_pred = "https://windflow-uiovyej6ca-ew.a.run.app/predict"
 URL_true = "https://windflow-uiovyej6ca-ew.a.run.app/evaluate"
 
-PARAMS = {'fecha':d, 'hora':t}
+PARAMS = {'fecha':d, 'hora':datetime.timedelta(hours=int(h), minutes=int(m), seconds=int(s)) + datetime.timedelta(hours=3, minutes=0,seconds=0)}
+# PARAMS = {'fecha':d, 'hora':time}
 
 
 def click():

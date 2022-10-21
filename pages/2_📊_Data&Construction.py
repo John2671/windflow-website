@@ -45,7 +45,7 @@ image = Image.open('appWindFlow/grafico.png')
 st.image(image, caption='Historical data of the direction and force of the wind')
 
 st.markdown("""## The model 🧑🏼‍🔬
-Three models were tested and metrics were evaluated to find the best model (Bidirectional LSTM, Profet, Multivariate LSTM). The model that showed the best performance was the following, Bidirectional LSTM, which was the one used in the app.
+Two models were tested and metrics were evaluated to find the best model (Bidirectional LSTM, LSTM AR). The model that showed the best performance was the following, Bidirectional LSTM, which was the one used in the app.
 ## Application functionality 📱
 It predicts the speed in (m/s) and the direction in (degrees°) for the next 06 hours according to the station, date and time indicated
 """)
