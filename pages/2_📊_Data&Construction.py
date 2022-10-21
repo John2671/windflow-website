@@ -35,6 +35,8 @@ def add_logo():
 #####
 add_logo()
 
+st.sidebar.markdown("# Data 📚")
+
 st.markdown("""## Data: ✍🏼
 Real Data that we obtained is from a meteorological company in Chile, it is historical information of 05 years.
 For each date and minute we have measurements of wind speed and direction as well as temperature and humidity. The data was delivered in an API, a dictionary with Json format that was converted into a Dataframe.""")
@@ -47,16 +49,3 @@ Three models were tested and metrics were evaluated to find the best model (Bidi
 ## Application functionality 📱
 It predicts the speed in (m/s) and the direction in (degrees°) for the next 06 hours according to the station, date and time indicated
 """)
-
-
-"""### Wind"""
-
-file_ = open("/Users/francepoma/code/sebasdq/WindFlow/appWindFlow/tree wind.gif", "rb")
-contents = file_.read()
-data_url = base64.b64encode(contents).decode("utf-8")
-file_.close()
-
-st.markdown(
-    f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
-    unsafe_allow_html=True,
-)

@@ -122,7 +122,7 @@ st.markdown("""# WindFlow
 Due to the fact that certain cities are located near mining centers,
 these places are exposed to microparticle contamination from dynamite blasting activities, which makes it extremely urgent to predict wind speed and direction in order to properly program these activities and thus reduce the propagation radius of these microparticles.""")
 
-st.sidebar.markdown("# Main page 🎈")
+st.sidebar.markdown("# App 🤖")
 
 
 st.caption('On the map below you can see (in the blue dots) the locations of the copper mine works. Near and to the south of these is the city of Calama, which has a population of 180,283. Currently it presents many pollution problems linked to the work of the mine, with the following work we seek to reduce the environmental impact by knowing the best moments of operation.')
