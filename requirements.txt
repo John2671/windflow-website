@@ -6,5 +6,4 @@ requests
 seaborn
 streamlit_folium
 folium
-PIL
 os
